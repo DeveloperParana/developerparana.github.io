@@ -1,0 +1,137 @@
+/*
+@main: #33A85C
+@dark: #18A14D
+@light: #15A14B
+*/
+
+body, a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #33A85C;
+}
+
+/* HEADER */
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header .logo img {
+  width: 110px;
+}
+
+header nav ul {
+  margin-top: 45px;
+}
+header nav ul.list-inline li {
+  padding: 0;
+}
+header nav ul li a {
+  text-transform: uppercase;
+  padding: 15px 10px;
+}
+header nav ul li a:hover {
+  color: #33A85C;
+}
+
+/* HERO */
+section#hero{
+  position: relative;
+  border-top: 5px solid #18A14D;
+  margin-bottom: 100px;
+}
+section#hero img{
+  width: 100%;
+  -webkit-filter: url('css/filters.svg#hero');
+}
+
+section#hero .center{
+  position: absolute;
+  top: 50%;
+  right: 7vw;
+  margin-top: -3vw;
+  text-align: center;;
+}
+
+section#hero h1,
+section#hero h2 {
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 600;
+  margin: -2vw;
+  padding: 0;
+}
+section#hero h2:after {content: none}
+
+section#hero h1 { font-size: 9vw; }
+section#hero h2 {
+  font-size: 3.3vw;
+  padding-left: 2vw;
+}
+
+/* sections */
+section h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5ch;
+  padding-bottom: 25px;
+}
+
+section h2:after {
+  width: 240px;
+  border-top: 2px solid #18A14D;
+  display: table;
+  content: '';
+}
+
+section .description {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+
+/* POSTS */
+section#posts .post {
+    height: 180px;
+    background-color: #333;
+    margin-bottom: 60px;
+}
+
+section#posts .post .date {
+  background-color: #15A14B;
+  margin: 72px 72px 0 72px;
+  float: left;
+  width: 136px;
+  height: 136px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+section#posts .post .date .day {
+  padding-left: 10px;
+}
+section#posts .post .date .day:after {
+  display: table;
+  content: ' ';
+  border-top: 1px solid #FFF;
+  width: 115px;
+  transform: rotate(315deg);
+}
+
+section#posts .post .date .month {
+  text-align: right;
+  padding-right: 10px;
+}
+
+section#posts .post .content {
+    padding: 25px 0;
+    color: #FFF;
+}
+
+section#posts .post .description {
+  font-weight: 100;
+  font-size: 1.2em;
+  padding-right: 25px;
+}

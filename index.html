@@ -1,64 +1,197 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>DevParana.org</title>
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link href="stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href="stylesheets/stylesheet.css" media="screen" rel="stylesheet" type="text/css">
-        <link href="stylesheets/github-light.css" media="screen" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <section class="page-header">
-            <h1 class="project-name">devparana.org</h1>
-            <h2 class="project-tagline"></h2>
-            <a class="btn" href="https://github.com/DeveloperParana/">View on GitHub</a>
-            <a class="btn" href="https://facebook.com/DeveloperParana">On Facebook</a>
-            <a class="btn" href="http://blog.devparana.org">Our Blog</a>
-        </section>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DevParaná</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="pull-right">
+          <nav>
+            <ul class="list-unstyled list-inline">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Parcerias</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="logo">
+          <img src="images/devparana.jpeg" alt="Dev Paraná" title="Dev Paraná">
+        </div>
+      </div>
+    </header>
 
-        <section class="main-content">
-            <h3>
-                <a aria-hidden="true" class="anchor" href="#welcome-to-devparana" id="welcome-to-devparana">
-                    <span class="octicon octicon-link"></span>
-                </a>Bem vindo ao Developers Paraná.
-            </h3>
+    <section id="hero">
+      <img src="images/hero.jpg" alt="Dev Paraná">
+      <div class="center">
+        <h1>Comunidade</h1>
+        <h2>Paranaense de Desenvolvedores</h2>
+      </div>
+    </section>
 
-            <p>A ideia deste movimento é dar o empurrão que faltava para muito dos desenvolvedores paranaenses começar a compartilhar conhecimentos, através de MeetUps, Coding Dojo, Conferências e tudo mais que pudermos fazer.</p>
-            <p>Nossa iniciativa, é para auxiliar nas comunidades e movimentos nas suas ações, não competindo com os mesmos.</p>
+    <section id="posts">
+      <div class="container">
+        <h2>Últimos Posts</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <h3>
-                <a aria-hidden="true" class="anchor" href="#how-to-participate" id="how-to-participate">
-                    <span class="octicon octicon-link"></span>
-                </a>Como participar
-            </h3>
+        <div class="posts">
+          <div class="post">
+            <div class="date">
+              <div class="day">05</div>
+              <div class="month">10</div>
+            </div>
+            <div class="content">
+              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
+              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="date">
+              <div class="day">05</div>
+              <div class="month">10</div>
+            </div>
+            <div class="content">
+              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
+              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="date">
+              <div class="day">05</div>
+              <div class="month">10</div>
+            </div>
+            <div class="content">
+              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
+              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <p>Estamos tomando decisões em conjunto no Slack criado para o Dev Paraná, para fazer parte acesse <a href="http://devparana.herokuapp.com">devparana.herokuapp.com</a>.</p>
+    <section id="projetos">
+      <div class="left col-sm-4">
+        <h2>Nossos Projetos</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-            <h3>
-                <a aria-hidden="true" class="anchor" href="#blog" id="blog">
-                    <span class="octicon octicon-link"></span>
-                </a>Blog
-            </h3>
+        <a href="#" class="button">Participe</a>
+      </div>
+      <ul class="projetos list-unstyled col-sm-8">
+        <li class="projeto col-sm-4">
+          <h3>Babel.JS</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button>Contribua</button>
+        </li>
+        <li class="projeto col-sm-4">
+          <h3>Babel.JS</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button>Contribua</button>
+        </li>
+        <li class="projeto col-sm-4">
+          <h3>Babel.JS</h3>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button>Contribua</button>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
 
-            <p>Criamos um blog o qual vamos manter postagens feitas por integrantes do movimento. <a href="http://blog.devparana.org">Você pode conferir aqui</a>, caso queira nos ajudar escreva um post e faça um Pull Request.</p>
+    <section id="eventos">
+      <div class="container">
+        <h2>Eventos</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <footer class="site-footer">
-                <span class="site-footer-owner">
-                    <a href="https://github.com/DeveloperParana/devparana.github.io">devparana.org</a>
-                    is maintained by
-                    <a href="https://github.com/DeveloperParana">DeveloperParana</a>.</span>
+        <ul class="eventos">
+          <li class="evento">
+            <h3>Saiba mais</h3>
+          </li>
+          <li class="evento">
+            <h3>Saiba mais</h3>
+          </li>
+          <li class="evento">
+            <h3>Saiba mais</h3>
+          </li>
+        </ul>
 
-                <span class="site-footer-credits">This page was generated by
-                    <a href="https://pages.github.com">GitHub Pages</a>
-                    using the
-                    <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a>
-                    by
-                    <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-            </footer>
+        <button>Próximos eventos</button>
+      </div>
+    </section>
 
-        </section>
+    <section id="apoio">
+      <div class="container">
+        <h2>Apoios e Parceiros</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-    </body>
+        <button>Saiba mais</button>
+
+        <ul class="apoios">
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+          <li class="apoio"><img src="" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <h2>Entre em contato</h2>
+        <p class="description">Precisamos de ajuda para unir mais nossa comunidade, tem alguma dúvida ou sugestão? Deseja ser um parceiro? Entre em contato pelo nosso formulário ou se preferir, entre em nosso Slack, onde grande parte da comunidade  se interage por lá, clique aqui e participe.</p>
+
+        <form>
+          <div class="col-sm-6">
+            <div class="group">
+              <label for="">Seu nome</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="group">
+              <label for="">E-mail</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="group">
+              <label for="">Assunto</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="group">
+              <label for="">Mensagem</label>
+              <textarea cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <span>2016, da comunidade para a comunidade</span>
+        <div class="pull-right">
+          <span>Acompanhe-nos, nas redes sociais.</span>
+          <ul class="redes-sociais">
+            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+  </body>
 </html>
