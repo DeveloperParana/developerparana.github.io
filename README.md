@@ -1,2 +1,1 @@
-# devparana.org
-Site do devparana.org
+# DevParaná Website
