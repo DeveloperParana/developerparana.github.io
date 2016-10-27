@@ -8,6 +8,8 @@
 Em construção, nos ajude a construir!
 
 ## Contribuindo
+Olhe nosso [projects](https://github.com/DeveloperParana/site/projects/1).
+
 Pronto para contribuir? [Siga nossas recomendações](https://github.com/DeveloperParana/site/blob/master/CONTRIBUTING.md).
 
 ## Licença
