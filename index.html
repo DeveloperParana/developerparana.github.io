@@ -1,79 +1,63 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>DevParaná</title>
+
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="pull-right">
-          <nav>
-            <ul class="list-unstyled list-inline">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Eventos</a></li>
-              <li><a href="#">Parcerias</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
         <div class="logo">
-          <img src="images/devparana.jpeg" alt="Dev Paraná" title="Dev Paraná">
+          <a href="">
+            <img src="dist/assets/images/devparana.jpeg" alt="Dev Paraná" title="Dev Paraná">
+          </a>
         </div>
+
+        <nav class="menu">
+          <ul>
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Blog</a></li>
+            <li class="menu-item"><a href="#">Projetos</a></li>
+            <li class="menu-item"><a href="#">Videos</a></li>
+            <li class="menu-item"><a href="#">Eventos</a></li>
+            <li class="menu-item"><a href="#">Parcerias</a></li>
+            <li class="menu-item"><a href="#">Contato</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <section id="hero">
-      <img src="images/hero.jpg" alt="Dev Paraná">
-      <div class="center">
-        <h1>Comunidade</h1>
-        <h2>Paranaense de Desenvolvedores</h2>
-      </div>
-    </section>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">Comunidade</h1>
+          <h2 class="hero-subtitle">Paranaense de Desenvolvedores</h2>
+        </div>
+      </section>
 
-    <section id="posts">
-      <div class="container">
-        <h2>Últimos Posts</h2>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <section id="posts" class="posts">
+        <div class="container">
+          <h2>Últimos Posts</h2>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <div class="posts">
-          <div class="post">
-            <div class="date">
-              <div class="day">05</div>
-              <div class="month">10</div>
-            </div>
-            <div class="content">
-              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
-              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="date">
-              <div class="day">05</div>
-              <div class="month">10</div>
-            </div>
-            <div class="content">
-              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
-              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="date">
-              <div class="day">05</div>
-              <div class="month">10</div>
-            </div>
-            <div class="content">
-              <h3>Quando o Scrum dá Errado: O papel do PO</h3>
-              <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
+          <div class="posts">
+            <div class="post">
+              <div class="date">
+                <div class="day">05</div>
+                <div class="month">10</div>
+              </div>
+              <div class="content">
+                <h3>Quando o Scrum dá Errado: O papel do PO</h3>
+                <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <section id="projetos">
       <div class="left col-sm-4">
@@ -190,7 +174,6 @@
             <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
           </ul>
         </div>
-
       </div>
     </footer>
   </body>

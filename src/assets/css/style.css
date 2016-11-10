@@ -1,0 +1,156 @@
+/*
+*
+* Global
+*
+*/
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #33a85c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+/*
+*
+* Header
+*
+*/
+.header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo,
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%
+}
+
+.logo { 
+  max-width: 20%; 
+  padding: 15px 0;
+}
+
+.logo img {
+  max-width: 40%;
+  display: inline-block;
+}
+
+.menu { 
+  max-width: 80%;
+  text-align: right;
+}
+
+.menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.menu-item a {
+  color: #33a85c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*
+*
+* Hero
+*
+*/
+.hero {
+  width: 100%;
+  min-height: 100%;
+  background: url('../images/hero.png');
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-80%, -80%);
+  text-align: center;
+}
+
+.hero-title,
+.hero-subtitle {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.hero-subtitle { font-size: 36px; }
+.hero-subtitle:after  { content: none }
+
+/* POSTS */
+section#posts .post {
+    height: 180px;
+    background-color: #333;
+    margin-bottom: 60px;
+}
+
+section#posts .post .date {
+  background-color: #15A14B;
+  margin: 72px 72px 0 72px;
+  float: left;
+  width: 136px;
+  height: 136px;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+section#posts .post .date .day {
+  padding-left: 10px;
+}
+section#posts .post .date .day:after {
+  display: table;
+  content: ' ';
+  border-top: 1px solid #FFF;
+  width: 115px;
+  transform: rotate(315deg);
+}
+
+section#posts .post .date .month {
+  text-align: right;
+  padding-right: 10px;
+}
+
+section#posts .post .content {
+  padding: 25px 0;
+  color: #FFF;
+}
+
+section#posts .post .description {
+  font-weight: 100;
+  font-size: 1.2em;
+  padding-right: 25px;
+}
