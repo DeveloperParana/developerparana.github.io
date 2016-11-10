@@ -5,8 +5,15 @@
 > :rocket: Site do Devparaná
 
 ## Como utilizar
-Em construção, nos ajude a construir!
+Primeiramente, instale as dependencias
+```
+npm i
+```
 
+Ao rodar a task abaixo, a aplicação ira abrir em `localhost:4000`
+```
+gulp
+```
 ## Contribuindo
 Olhe nosso [projects](https://github.com/DeveloperParana/site/projects/1).
 
