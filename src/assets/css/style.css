@@ -44,7 +44,7 @@ a {
   width: 100%
 }
 
-.logo { 
+.logo {
   max-width: 20%; 
   padding: 15px 0;
 }
@@ -54,7 +54,7 @@ a {
   display: inline-block;
 }
 
-.menu { 
+.menu {
   max-width: 80%;
   text-align: right;
 }
@@ -110,47 +110,53 @@ a {
 .hero-subtitle { font-size: 36px; }
 .hero-subtitle:after  { content: none }
 
-/* POSTS */
-section#posts .post {
-    height: 180px;
-    background-color: #333;
-    margin-bottom: 60px;
+/*
+*
+* Posts
+*
+*/
+.posts .post {
+  height: 180px;
+  background-color: #333;
+  margin-bottom: 60px;
+  font-size: 0;
 }
 
-section#posts .post .date {
-  background-color: #15A14B;
-  margin: 72px 72px 0 72px;
-  float: left;
+.posts .date {
+  background-color: #15a14b;
   width: 136px;
   height: 136px;
-  color: #FFF;
-  font-size: 3em;
+  color: #fff;
+  font-size: 30px;
   font-weight: 100;
+  display: inline-block;
 }
 
-section#posts .post .date .day {
+.posts .day {
   padding-left: 10px;
 }
-section#posts .post .date .day:after {
+
+.posts .date .day:after {
   display: table;
   content: ' ';
-  border-top: 1px solid #FFF;
+  border-top: 1px solid #fff;
   width: 115px;
   transform: rotate(315deg);
 }
 
-section#posts .post .date .month {
+.posts .month {
   text-align: right;
   padding-right: 10px;
 }
 
-section#posts .post .content {
-  padding: 25px 0;
-  color: #FFF;
+.posts .content {
+  width: calc(100% - 136px);
+  display: inline-block;
 }
 
-section#posts .post .description {
+.posts .description {
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: 18px;
   padding-right: 25px;
+  color: #fff;
 }
