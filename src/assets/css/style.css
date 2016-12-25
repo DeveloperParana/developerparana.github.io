@@ -45,7 +45,7 @@ a {
 }
 
 .logo {
-  max-width: 20%; 
+  max-width: 20%;
   padding: 15px 0;
 }
 
@@ -132,9 +132,7 @@ a {
   display: inline-block;
 }
 
-.posts .day {
-  padding-left: 10px;
-}
+.posts .day { padding-left: 10px; }
 
 .posts .date .day:after {
   display: table;

@@ -15,23 +15,28 @@ let paths = {
   "dist": {
     "css": "dist/assets/css/",
     "js": "dist/assets/scripts/",
-    "images": "dist/assets/images/",
+    "images": "dist/assets/images/"
   }
 }
 
-
+/**
+ * Minify images
+ */
 gulp.task('minify-images', () => {
   gulp.src(paths.src.images)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.dist.images))
 });
 
-
+/**
+ * Minify css
+ */
 gulp.task('minify-css', () => {
   gulp.src(paths.src.css)
     .pipe(cleanCss({ processImport: false }))
     .pipe(gulp.dest(paths.dist.css));
 });
+
 
 gulp.task('browser-sync-reload', () => {
   browserSync.reload();
@@ -48,7 +53,7 @@ gulp.task('browser-sync', () => {
 
 
 gulp.task('default', ['browser-sync'], () => {
-  gulp.watch(paths.src.images, ['browser-sync-reload']);
+  gulp.watch(paths.src.images, ['minify-images', 'browser-sync-reload']);
   gulp.watch(paths.src.css, ['minify-css', 'browser-sync-reload']);
   gulp.watch(paths.src.html, ['browser-sync-reload']);
 });
