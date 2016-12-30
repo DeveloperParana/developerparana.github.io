@@ -1,0 +1,46 @@
+.posts
+  width 100%
+  margin 60px 0
+
+  .title,
+  .subtitle
+    color $green
+
+  .post
+    height 180px
+    background $gray
+    margin-bottom 60px
+    font-size 0
+
+  .date
+    background $green
+    width 136px
+    height 136px
+    color $white
+    font-size 30px
+    font-weight 100
+    display inline-block
+
+  .day
+    padding-left 10px
+
+    &::after
+      display table
+      content ''
+      border-top 1px solid $white
+      width 115px
+      transform rotate(315deg)
+
+  .month
+    text-align right
+    padding-right 10px
+
+  .content
+    width calc(100% - 136px)
+    display inline-block
+
+  .description
+    font-weight 100
+    font-size 18px
+    padding-right 25px
+    color $white

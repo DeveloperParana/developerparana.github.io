@@ -2,9 +2,13 @@
   <head>
     <title>DevParaná</title>
 
-    <link rel="stylesheet" href="dist/assets/css/style.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="dist/assets/css/main.css">
 
+    <!-- Font Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -32,17 +36,19 @@
     </header>
 
     <main>
-      <section id="hero" class="hero">
+      <section class="hero" id="hero">
         <div class="hero-text">
-          <h1 class="hero-title">Comunidade</h1>
-          <h2 class="hero-subtitle">Paranaense de Desenvolvedores</h2>
+          <h1 class="hero-text-title">Comunidade</h1>
+          <h2 class="hero-text-subtitle">Paranaense de Desenvolvedores</h2>
         </div>
       </section>
 
-      <section id="posts" class="posts">
+      <section class="posts" id="posts">
         <div class="container">
-          <h2>Últimos Posts</h2>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="text">
+            <h2 class="title">Últimos Posts</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
 
           <div class="posts">
             <div class="post">
@@ -61,42 +67,42 @@
       </section>
     </main>
 
-    <section id="projetos">
-      <div class="left col-sm-4">
-        <h2>Nossos Projetos</h2>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <section class="projects" id="projects">
+      <div class="projects-text">
+        <h2 class="projects-text-title">Nossos projetos</h2>
+        <p class="projects-text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <a href="#" class="button">Participe</a>
+        <a class="projects-text-button" href="#">Participe</a>
       </div>
       
-      <ul class="projetos list-unstyled col-sm-8">
-        <li class="projeto col-sm-4">
-          <h3>Babel.JS</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button>Contribua</button>
+      <ul class="projects-list">
+        <li class="project">
+          <h3 class="project-title">Babel.JS</h3>
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+          <a class="project-button" href="">Contribua</a>
         </li>
 
-        <li class="projeto col-sm-4">
-          <h3>Babel.JS</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button>Contribua</button>
+        <li class="project">
+          <h3 class="project-title">Babel.JS</h3>
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="project-button" href="">Contribua</a>
         </li>
 
-        <li class="projeto col-sm-4">
-          <h3>Babel.JS</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button>Contribua</button>
+        <li class="project">
+          <h3 class="project-title">Babel.JS</h3>
+          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="project-button" href="">Contribua</a>
         </li>
       </ul>
-
-      <div class="clearfix"></div>
     </section>
 
-    <section id="eventos">
+    <section class="events" id="events">
       <div class="container">
-        <h2>Eventos</h2>
-
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="text">
+          <h2 class="title">Eventos</h2>
+          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
 
         <ul class="eventos">
           <li class="evento">
@@ -118,11 +124,11 @@
 
     <section id="apoio">
       <div class="container">
-        <h2>Apoios e Parceiros</h2>
-        
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-        <button>Saiba mais</button>
+        <div class="text">
+          <h2 class="title">Apoios e Parceiros</h2>
+          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="button" href="">Saiba mais</a>
+        </div>
 
         <ul class="apoios">
           <li class="apoio"><img src="" alt=""></li>
@@ -137,10 +143,10 @@
       </div>
     </section>
 
-    <section id="contato">
+    <section class="contact" id="contact">
       <div class="container">
-        <h2>Entre em contato</h2>
-        <p class="description">Precisamos de ajuda para unir mais nossa comunidade, tem alguma dúvida ou sugestão? Deseja ser um parceiro? Entre em contato pelo nosso formulário ou se preferir, entre em nosso Slack, onde grande parte da comunidade  se interage por lá, clique aqui e participe.</p>
+        <h2 class="title">Entre em contato</h2>
+        <p class="subtitle">Precisamos de ajuda para unir mais nossa comunidade, tem alguma dúvida ou sugestão? Deseja ser um parceiro? Entre em contato pelo nosso formulário ou se preferir, entre em nosso Slack, onde grande parte da comunidade  se interage por lá, clique aqui e participe.</p>
 
         <form>
           <div class="col-sm-6">
@@ -176,7 +182,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <span>2016, da comunidade para a comunidade</span>
 
