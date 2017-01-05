@@ -5,7 +5,17 @@ const rupture = require('rupture')
 const cleanCss = require('gulp-clean-css')
 const imagemin = require('gulp-imagemin')
 const sourcemaps = require('gulp-sourcemaps')
+const deploy = require('gulp-deploy-git')
 const reload = browserSync.reload
+
+let config = {
+  deploy: {
+    // Configurar repositório pra deploy, branch default master
+    repository: 'https://github.com/uselessdev/developerparana.github.io.git',
+    // Prefix tudo que estiver dentro dessa pasta
+    prefix: 'dist'
+  }
+}
 
 let paths = {
   src: {
@@ -61,6 +71,16 @@ gulp.task('browser-sync', () => {
 gulp.task('build', ['minify-images', 'minify-css'], () => {
   gulp.src(['CNAME', 'index.html'], {cwd: './src'})
     .pipe(gulp.dest('./dist'))
+})
+
+gulp.task('deploy', ['build'], () => {
+  gulp.src('./dist/**/*', {read: false})
+    .pipe(deploy({
+      repository: config.deploy.repository,
+      prefix: config.deploy.prefix,
+      verbose: true,
+      debug: true
+    }))
 })
 
 gulp.task('default', ['compile-stylus', 'browser-sync'], () => {
