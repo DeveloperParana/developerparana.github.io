@@ -9,10 +9,11 @@ const reload = browserSync.reload
 
 let paths = {
   src: {
-    css: 'src/assets/css/*',
-    js: 'src/assets/scripts/',
-    images: 'src/assets/images/*',
-    stylus: 'src/assets/stylus/*',
+    css: './src/assets/css/*',
+    js: './src/assets/scripts/',
+    images: './src/assets/images/*',
+    stylus: './src/assets/stylus/*',
+    build: './src/assets/css',
     html: 'index.html'
   },
   dist: {
@@ -39,7 +40,7 @@ gulp.task('compile-stylus', () => {
     .pipe(sourcemaps.init())
     .pipe(stylus({ use: rupture() }))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.dist.css))
+    .pipe(gulp.dest(paths.src.build))
 })
 
 gulp.task('browser-sync-reload', () => {
@@ -50,13 +51,19 @@ gulp.task('browser-sync', () => {
   browserSync({
     open: false,
     notify: false,
-    server: './'
+    server: './src'
   })
 })
 
-gulp.task('default', ['browser-sync'], () => {
+/**
+ * Task que gera o build final antes de fazer deploy
+ */
+gulp.task('build', ['minify-images', 'minify-css'], () => {
+  gulp.src(['CNAME', 'index.html'], {cwd: './src'})
+    .pipe(gulp.dest('./dist'))
+})
+
+gulp.task('default', ['compile-stylus', 'browser-sync'], () => {
   gulp.watch(`${paths.src.stylus}**/*`, ['compile-stylus', reload])
-  gulp.watch(paths.src.images, ['minify-images', reload])
-  gulp.watch(paths.dist.css, ['minifiy-css', reload])
   gulp.watch(paths.src.html, reload)
 })
