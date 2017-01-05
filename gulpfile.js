@@ -12,6 +12,8 @@ let config = {
   deploy: {
     // Configurar repositório pra deploy, branch default master
     repository: 'https://github.com/uselessdev/developerparana.github.io.git',
+    // Aplica o deploy a partir desse branch
+    branch: ['develop'],
     // Prefix tudo que estiver dentro dessa pasta
     prefix: 'dist'
   }
@@ -77,6 +79,7 @@ gulp.task('deploy', ['build'], () => {
   gulp.src('./dist/**/*', {read: false})
     .pipe(deploy({
       repository: config.deploy.repository,
+      branches: config.deploy.branch,
       prefix: config.deploy.prefix,
       verbose: true,
       debug: true
