@@ -55,9 +55,15 @@ gulp.task('browser-sync', () => {
   })
 })
 
+/**
+ * Task que gera o build final antes de fazer deploy
+ */
+gulp.task('build', ['minify-images', 'minify-css'], () => {
+  gulp.src(['CNAME', 'index.html'], {cwd: './src'})
+    .pipe(gulp.dest('./dist'))
+})
+
 gulp.task('default', ['compile-stylus', 'browser-sync'], () => {
   gulp.watch(`${paths.src.stylus}**/*`, ['compile-stylus', reload])
-  // gulp.watch(paths.src.images, ['minify-images', reload])
-  // gulp.watch(paths.dist.css, ['minifiy-css', reload])
   gulp.watch(paths.src.html, reload)
 })
