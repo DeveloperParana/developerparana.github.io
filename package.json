@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "standard": "standard './src/**/*.js' | snazzy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
     "gulp-clean-css": "^2.0.13",
     "gulp-imagemin": "^3.1.1",
     "gulp-stylus": "^2.6.0",
-    "rupture": "^0.6.2"
+    "rupture": "^0.6.2",
+    "snazzy": "^5.0.0",
+    "standard": "^8.6.0"
   }
 }
