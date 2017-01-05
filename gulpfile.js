@@ -11,7 +11,7 @@ const reload = browserSync.reload
 let config = {
   deploy: {
     // Configurar repositório pra deploy, branch default master
-    repository: 'https://github.com/uselessdev/developerparana.github.io.git',
+    repository: 'https://github.com/DeveloperParana/developerparana.github.io.git',
     // Aplica o deploy a partir desse branch
     branch: ['develop'],
     // Prefix tudo que estiver dentro dessa pasta
