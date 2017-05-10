@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="theme-color" content="#16a085">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#15a14b">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dev Paraná - Comunidade paranaense de desenvolvedores">
+    <meta name="description" content="">
 
-    <title>DevParaná</title>
+    <title>Devparaná</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -18,187 +18,91 @@
     <header class="header">
       <div class="container">
         <div class="logo">
-          <a href="/" title="Dev Paraná - Comunidade paranaense de desenvolvedores">
-            <img src="assets/images/devparana.jpeg" alt="Dev Paraná" title="Dev Paraná">
+          <a href="">
+            <!--<img src="assets/images/logo.svg">-->
           </a>
         </div>
 
         <nav class="menu">
           <ul>
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#">Blog</a></li>
-            <li class="menu-item"><a href="#">Projetos</a></li>
-            <li class="menu-item"><a href="#">Videos</a></li>
-            <li class="menu-item"><a href="#">Eventos</a></li>
-            <li class="menu-item"><a href="#">Parcerias</a></li>
-            <li class="menu-item"><a href="#">Contato</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Eventos</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Parceiros</a></li>
+            <li class="menu-item"><a class="menu-social fa fa-facebook" href="#"></a></li>
+            <li class="menu-item"><a class="menu-social fa fa-slack" href="#"></a></li>
+            <li class="menu-item"><a class="menu-social fa fa-twitter" href="#"></a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-text">
-          <h1 class="hero-text-title">Comunidade</h1>
-          <h2 class="hero-text-subtitle">Paranaense de Desenvolvedores</h2>
+    <main class="main">
+      <section id="home" class="home">
+        <div class="container">
+          <div class="text">
+            <h1 class="title">Comunidade paranaense de desenvolvedores</h1>
+            <p class="description">Faça parte da comunidade paranaense de desenvolvedores, participe!</p>
+          </div>
         </div>
       </section>
 
-      <section class="posts" id="posts">
+      <section id="events" class="events">
         <div class="container">
-          <div class="text">
-            <h2 class="title">Últimos Posts</h2>
-            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2 class="title">Eventos</h2>
+          <p class="subtitle">Vejas os últimos eventos para você participar em nosso estado!</p>
+
+          <div class="event">
+            <span class="event-date">11.05</span>
+            <h3 class="event-title">Serverless com Firebase</h3>
+            <h5 class="event-organizer">GDG Maringá</h5>
+            <a class="event-link" href="">Visite o site deste evento</a>
           </div>
 
-          <div class="posts">
-            <div class="post">
-              <div class="date">
-                <div class="day">05</div>
-                <div class="month">10</div>
-              </div>
-
-              <div class="content">
-                <h3>Quando o Scrum dá Errado: O papel do PO</h3>
-                <div class="description">Jogue toda a documentação para o alto e comece a programar! Jà é mais que fato que metodologias de desenvolvimento ágil funcionam.</div>
-              </div>
-            </div>
+          <div class="event">
+            <span class="event-date">20.05</span>
+            <h3 class="event-title">Xamarin Dev Day</h3>
+            <h5 class="event-organizer">Dev Paraná</h5>
+            <a class="event-link" href="">Visite o site deste evento</a>
           </div>
+
+          <div class="event">
+            <span class="event-date">24.06</span>
+            <h3 class="event-title">Meetup DevParaná - Maringá</h3>
+            <h5 class="event-organizer">Dev Paraná</h5>
+            <a class="event-link" href="">Visite o site deste evento</a>
+          </div>
+
+          <div class="event">
+            <span class="event-date">22.06</span>
+            <h3 class="event-title">DevParaná Conference 2017</h3>
+            <h5 class="event-organizer">Dev Paraná</h5>
+            <a class="event-link" href="">Visite o site deste evento</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="container">
+          <h2 class="title">Parceiros</h2>
+          <p class="subtitle">Aqui você encontra algumas das empresas que acreditam na nossa comunidade.</p>
+        </div>
+      </section>
+
+      <section id="blog" class="blog">
+        <div class="container">
+          <h2 class="title">Nosso blog</h2>
+          <p class="subtitle">Aqui você encontra nossas últimas postagens, participe também!</p>
+
+          <ul class="posts">
+            <li class="post"></li>
+          </ul>
         </div>
       </section>
     </main>
 
-    <section class="projects" id="projects">
-      <div class="projects-text">
-        <h2 class="projects-text-title">Nossos projetos</h2>
-        <p class="projects-text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-        <a class="projects-text-button" href="#">Participe</a>
-      </div>
-
-      <ul class="projects-list">
-        <li class="project">
-          <h3 class="project-title">Babel.JS</h3>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          <a class="project-button" href="">Contribua</a>
-        </li>
-
-        <li class="project">
-          <h3 class="project-title">Babel.JS</h3>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="project-button" href="">Contribua</a>
-        </li>
-
-        <li class="project">
-          <h3 class="project-title">Babel.JS</h3>
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="project-button" href="">Contribua</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="events" id="events">
-      <div class="container">
-        <div class="text">
-          <h2 class="title">Eventos</h2>
-          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <ul class="eventos">
-          <li class="evento">
-            <h3>Saiba mais</h3>
-          </li>
-
-          <li class="evento">
-            <h3>Saiba mais</h3>
-          </li>
-
-          <li class="evento">
-            <h3>Saiba mais</h3>
-          </li>
-        </ul>
-
-        <button>Próximos eventos</button>
-      </div>
-    </section>
-
-    <section id="apoio">
-      <div class="container">
-        <div class="text">
-          <h2 class="title">Apoios e Parceiros</h2>
-          <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a class="button" href="">Saiba mais</a>
-        </div>
-
-        <ul class="apoios">
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-          <li class="apoio"><img src="" alt=""></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="title">Entre em contato</h2>
-        <p class="subtitle">Precisamos de ajuda para unir mais nossa comunidade, tem alguma dúvida ou sugestão? Deseja ser um parceiro? Entre em contato pelo nosso formulário ou se preferir, entre em nosso Slack, onde grande parte da comunidade  se interage por lá, clique aqui e participe.</p>
-
-        <form>
-          <div class="col-sm-6">
-            <div class="group">
-              <label for="">Seu nome</label>
-              <input type="text">
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="group">
-              <label for="">E-mail</label>
-              <input type="text">
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="group">
-              <label for="">Assunto</label>
-              <input type="text">
-            </div>
-          </div>
-
-          <div class="col-sm-12">
-            <div class="group">
-              <label for="">Mensagem</label>
-              <textarea cols="30" rows="10"></textarea>
-            </div>
-          </div>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-
     <footer class="footer">
-      <div class="container">
-        <span>2016, da comunidade para a comunidade</span>
 
-        <div class="pull-right">
-          <span>Acompanhe-nos, nas redes sociais.</span>
-
-          <ul class="redes-sociais">
-            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-          </ul>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

@@ -6,12 +6,12 @@
 
 ## Como utilizar
 Primeiramente, instale as dependencias
-```
+```sh
 npm i
 ```
 
-Ao rodar a task abaixo, a aplicação ira abrir em `localhost:4000`
-```
+Ao rodar a task abaixo, a aplicação ira abrir em `localhost:3000`
+```sh
 gulp
 ```
 ## Contribuindo
