@@ -2,13 +2,28 @@
   position absolute
   width 100%
   z-index 2
+  border-top 5px solid $white
+
+  .logo-content
+    span(2/5)
 
   .logo
-    span(2/5)
+    background $white
+    width 120px
+    height 120px
+    position relative
+
+  .image
+    display block
+    max-width 75%
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
 
   .menu
     span(3/5)
-    height 80px
+    height 100px
     text-align right
 
   .menu-item
@@ -20,7 +35,7 @@
     color $white
     font-weight 400
     margin-right 40px
-    line-height 80px
+    line-height 100px
 
   .menu-social
     color $white
