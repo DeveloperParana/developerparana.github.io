@@ -19,6 +19,14 @@
 
   .event
     span(1/4, top)
+    margin-bottom 30px
+
+    +below('t')
+      span(2/4, top)
+      text-align center
+
+    +below('m')
+      span(4/4, top)
 
   .event-date
     color $gray
@@ -32,6 +40,9 @@
       height 5px
       margin 10px 0 14px 0
       display block
+
+      +below('t')
+        margin 10px auto 14px auto
 
   .event-title
     font-size 14px
