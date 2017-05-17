@@ -1,0 +1,37 @@
+.footer
+  width 100%
+  background $white
+
+  .message
+    height 60px
+    line-height 60px
+    font-size 16px
+    color $green
+    span(4/5, middle)
+
+    +below('m')
+      span(5/5)
+      text-align center
+      line-height 0
+
+  .heart
+    color $red
+    display inline-block
+
+  .socials
+    text-align right
+    span(1/5, middle)
+
+    +below('m')
+      span(5/5)
+      text-align center
+      margin 20px 0
+
+  .social
+    color $green
+    margin-left 15px
+    font-size 20px
+
+    +below('m')
+      font-size 25px
+      margin-left 18px

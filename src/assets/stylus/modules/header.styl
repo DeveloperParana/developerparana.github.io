@@ -4,6 +4,65 @@
   z-index 2
   border-top 5px solid $white
 
+  .lines
+    background $white
+    width 100%
+    height 3px
+    margin 5px 0
+    transition all 450ms ease-in
+    display block
+
+  .close-hamburguer
+    .lines
+      cursor pointer
+
+  .line-top
+    transform translateY(200%) rotate(45deg)
+
+  .line-mid
+    opacity 0
+
+  .line-bottom
+    transform translateY(-320%) rotate(135deg)
+
+  .icon-hamburguer-content
+    display none
+
+    +below('m')
+      width 70%
+      text-align right
+      display inline-block
+      vertical-align middle
+
+  .icon-hamburguer
+    display none
+
+    +below('m')
+      position absolute
+      cursor pointer
+      width 30px
+      height 30px
+      z-index 55
+      right 20px
+      top 30px
+      display block
+
+      &:hover
+        animation zoom 300ms ease-in
+
+  #hamburguer
+    display none
+
+  #hamburguer:checked + .menu
+    display block
+    width 100%
+    min-height 100%
+    position fixed
+    background alpha($green, 0.8)
+    top 0
+    left 0
+    text-align center
+
   .logo-content
     span(1/5)
 
@@ -26,9 +85,27 @@
     height 100px
     text-align right
 
+    +below('m')
+      display none
+
+  .menu-list
+    +below('m')
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+
   .menu-item
     display inline-block
     vertical-align middle
+
+    +below('m')
+      display block
+
+  .menu-item:nth-of-type(n+6)
+    +below('m')
+      display inline-block
+      margin-top 20px
 
   .menu-link
     font-size 16px
@@ -37,7 +114,18 @@
     margin-right 40px
     line-height 100px
 
+    +below('m')
+      line-height 20px
+      font-size 25px
+      margin-bottom 20px
+      text-transform uppercase
+      display block
+
   .menu-social
     color $white
     font-size 22px
     margin-right 20px
+
+    +below('m')
+      font-size 25px
+      margin-right 25px

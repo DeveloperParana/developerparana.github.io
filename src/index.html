@@ -25,16 +25,26 @@
           </div>
         </div>
 
+        <div class="icon-hamburguer-content">
+          <label for="hamburguer" class="icon-hamburguer">
+			      <span class="lines line-top"></span>
+			      <span class="lines line-mid"></span>
+			      <span class="lines line-bottom"></span>
+			    </label>
+				</div>
+
+				<input id="hamburguer" type="checkbox">
+
         <nav class="menu">
-          <ul>
-            <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Eventos</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Sobre</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Blog</a></li>
-            <li class="menu-item"><a class="menu-link" href="#">Parceiros</a></li>
+          <ul class="menu-list">
+            <li class="menu-item"><a class="menu-link" href="#home">Home</a></li>
+            <li class="menu-item"><a class="menu-link" href="#events">Eventos</a></li>
+            <li class="menu-item"><a class="menu-link" href="#about">Sobre</a></li>
+            <li class="menu-item"><a class="menu-link" href="#blog">Blog</a></li>
+            <li class="menu-item"><a class="menu-link" href="#parnets">Parceiros</a></li>
             <li class="menu-item"><a class="menu-social fa fa-facebook" href="#"></a></li>
             <li class="menu-item"><a class="menu-social fa fa-slack" href="#"></a></li>
-            <li class="menu-item"><a class="menu-social fa fa-twitter" href="#"></a></li>
+            <li class="menu-item"><a class="menu-social fa fa-meetup" href="#"></a></li>
           </ul>
         </nav>
       </div>
@@ -112,10 +122,26 @@
     </main>
 
     <footer class="footer">
+      <div class="container">
+        <div class="message">
+          <p>Com <i class="heart fa fa-heart"></i> de desenvolvedores para desenvolvedores.</p>
+        </div>
 
+        <div class="socials">
+          <a class="social fa fa-facebook" href=""></a>
+          <a class="social fa fa-slack" href=""></a>
+          <a class="social fa fa-meetup" href=""></a>
+        </div>
+      </div>
     </footer>
   </body>
 
   <!-- Injetando scripts externos -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <script src="assets/scripts/script.js"></script>
+
+  <script src="assets/scripts/app.modules.js"></script>
+  <script src="assets/scripts/app.controller.js"></script>
+  <script src="assets/scripts/app.service.js"></script>
 </html>
