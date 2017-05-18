@@ -28,7 +28,7 @@
   .icon-hamburguer-content
     display none
 
-    +below('m')
+    +below('t')
       width 70%
       text-align right
       display inline-block
@@ -37,7 +37,7 @@
   .icon-hamburguer
     display none
 
-    +below('m')
+    +below('t')
       position absolute
       cursor pointer
       width 30px
@@ -85,11 +85,11 @@
     height 100px
     text-align right
 
-    +below('m')
+    +below('t')
       display none
 
   .menu-list
-    +below('m')
+    +below('t')
       position absolute
       top 50%
       left 50%
@@ -99,11 +99,11 @@
     display inline-block
     vertical-align middle
 
-    +below('m')
+    +below('t')
       display block
 
   .menu-item:nth-of-type(n+6)
-    +below('m')
+    +below('t')
       display inline-block
       margin-top 20px
 
@@ -114,18 +114,19 @@
     margin-right 40px
     line-height 100px
 
-    +below('m')
+    +below('t')
       line-height 20px
       font-size 25px
       margin-bottom 20px
       text-transform uppercase
       display block
+      margin-right 0
 
   .menu-social
     color $white
     font-size 22px
     margin-right 20px
 
-    +below('m')
+    +below('t')
       font-size 25px
-      margin-right 25px
+      margin 0 10px
