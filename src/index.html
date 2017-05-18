@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html ng-app="App" lang="pt-BR">
   <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#15a14b">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
 
-  <body>
+  <body ng-controller="AppController as vm">
     <header class="header">
       <div class="container">
         <div class="logo-content">
@@ -66,32 +66,11 @@
           <h2 class="title">Eventos</h2>
           <p class="subtitle">Vejas os últimos eventos para você participar em nosso estado!</p>
 
-          <div class="event">
-            <span class="event-date">11.05</span>
-            <h3 class="event-title">Serverless com Firebase</h3>
-            <h5 class="event-organizer">GDG Maringá</h5>
-            <a class="event-link" href="">Visite o site deste evento</a>
-          </div>
-
-          <div class="event">
-            <span class="event-date">20.05</span>
-            <h3 class="event-title">Xamarin Dev Day</h3>
-            <h5 class="event-organizer">Dev Paraná</h5>
-            <a class="event-link" href="">Visite o site deste evento</a>
-          </div>
-
-          <div class="event">
-            <span class="event-date">24.06</span>
-            <h3 class="event-title">Meetup DevParaná - Maringá</h3>
-            <h5 class="event-organizer">Dev Paraná</h5>
-            <a class="event-link" href="">Visite o site deste evento</a>
-          </div>
-
-          <div class="event">
-            <span class="event-date">22.06</span>
-            <h3 class="event-title">DevParaná Conference 2017</h3>
-            <h5 class="event-organizer">Dev Paraná</h5>
-            <a class="event-link" href="">Visite o site deste evento</a>
+          <div class="event" ng-repeat="event in vm.events">
+            <span class="event-date" ng-bind="event.date"></span>
+            <h3 class="event-title" ng-bind="event.title"></h3>
+            <h5 class="event-organizer" ng-bind="event.organization"></h5>
+            <a class="event-link" href="{{ event.link }}">Visite o site deste evento</a>
           </div>
         </div>
       </section>
@@ -112,7 +91,13 @@
           <p class="subtitle">Aqui você encontra nossas últimas postagens, participe também!</p>
 
           <ul class="posts">
-            <li class="post"></li>
+            <li class="post" ng-repeat="post in vm.posts">
+              <a href="{{ post.link }}" target="_blank">
+                <h2 class="post-title" ng-bind="post.title"></h2>
+                <span class="post-date" ng-bind="post.date"></span>
+                <div class="post-description" ng-bind-html="post.description | limitTo: 100"></div>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -142,6 +127,7 @@
 
   <!-- Injetando scripts externos -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
 
   <!-- Manipulação de tela -->
   <script src="assets/scripts/script.js"></script>

@@ -1,18 +1,25 @@
 angular
   .module('AppService', [])
-  .controller('AppService', AppService)
-
-  AppService.$inject = ['$http']
+  .service('AppService', AppService)
 
   function AppService($http) {
     var vm = this
-    var uri = ''
+    var uri = 'https://devparana.stamplayapp.com/api/cobject/v1'
 
     vm.retrieveEvents = retrieveEvents
+    vm.retrievePosts = retrievePosts
 
     function retrieveEvents() {
       return $http({
+        url: `${uri}/events`,
+        method: 'GET'
+      })
+    }
 
+    function retrievePosts() {
+      return $http({
+        url: `${uri}/posts`,
+        method: 'GET'
       })
     }
   }

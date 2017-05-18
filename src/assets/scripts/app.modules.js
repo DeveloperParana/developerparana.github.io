@@ -1,2 +1,6 @@
 angular
-  .module('App', [])
+  .module('App', [
+    'ngSanitize',
+    'AppController',
+    'AppService'
+  ])
