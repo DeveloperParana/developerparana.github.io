@@ -3,15 +3,23 @@
   min-height 100vh
 
   .title
-    color $green
+    color #242424
     font-size 36px
     font-weight 700
     text-transform uppercase
     text-align center
     margin-bottom 10px
 
+    &::after
+      content ''
+      display: block
+      width: 100px
+      margin: 0 auto
+      height: 7px
+      background: $green
+
   .subtitle
-    color $green
+    color #808080
     font-size 18px
     font-weight 400
     text-align center

@@ -1,45 +1,61 @@
 .blog
   margin-top 60px
-  min-height 100vh
+  min-height 100vh;
 
   .title
-    color $green
+    color #242424
     font-size 36px
     font-weight 700
     text-transform uppercase
     text-align center
     margin-bottom 10px
 
+    &::after
+      content ''
+      display: block
+      width: 100px
+      margin: 0 auto
+      height: 7px
+      background: $green
+
   .subtitle
-    color $green
+    color #808080
     font-size 18px
     font-weight 400
     text-align center
 
+  .posts
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
   .post
-    span(1/2, top)
+    height: 200px
+    flex-basis: 250px
+    margin: 10px
+    flex-grow: 1
+    border: 1px solid #ccc;
+    background-size: cover!important
+    padding: 10px
+
+  .post:first-child
+    height: 300px
+    flex-basis: 100%
+    flex-grow: 1
 
   .post-title
     font-size 22px
-    color $gray
+    color #fff
 
     &::after
       content ''
-      width 100%
-      height 5px
-      background $gray
-      display block
+      display: block
+      width: 50px
+      margin: 3px 0px 3px 0px
+      height: 7px
+      background: $green
 
   .post-date
-    font-size 18px
-    color $tundora
-
-  .post-description
-    text-align left
-
-    h2,
-    p
-      font-size 16px
-      color $green
-      font-weight 400
-
+    font-size 16px
+    color #d4d4d4

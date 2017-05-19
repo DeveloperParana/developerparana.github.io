@@ -52,7 +52,7 @@
 
     <main class="main">
       <section id="home" class="home">
-        <div class="container">
+        <div class="flex align-center full-height text-center">
           <div class="text">
             <h1 class="title">Comunidade paranaense de desenvolvedores</h1>
             <p class="description">Devparaná Conference 2017, dia 22 de julho!</p>
@@ -65,7 +65,6 @@
         <div class="container">
           <h2 class="title">Eventos</h2>
           <p class="subtitle">Vejas os últimos eventos para você participar em nosso estado!</p>
-
           <div class="event" ng-repeat="event in vm.events">
             <span class="event-date" ng-bind="event.date"></span>
             <h3 class="event-title" ng-bind="event.title"></h3>
@@ -90,7 +89,43 @@
           <h2 class="title">Nosso blog</h2>
           <p class="subtitle">Aqui você encontra nossas últimas postagens, participe também!</p>
 
-          <ul class="posts">
+          <div class="posts">
+
+            <div class="post" style="background: url(https://cdn-images-1.medium.com/max/1500/gradv/29/81/30/darken/25/1*RFbY-ao_DqoAkF3qahSf0w.jpeg)">
+              <div class="flex align-bottom">
+                <div class="margin">
+                  <h2 class="post-title">DevParaná Conference - Edson Yanaga</h2>
+                  <span class="post-date">Fri, 25 Nov 2016 09:00:00</span>
+                  <div class="post-description">Edson Yanaga é Diretor de Experiência do Desenvolvedor da Red Hat, é Java Champion e Microsoft MV</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post" style="background: url(https://cdn-images-1.medium.com/max/1500/gradv/29/81/30/darken/25/1*bh6jXFzbWjLNKhFj6v7U8g.jpeg)">
+              <div class="flex align-bottom">
+                <div class="margin">
+                  <h2 class="post-title">DevParaná Conference - Edson Yanaga</h2>
+                  <span class="post-date">Fri, 25 Nov 2016 09:00:00</span>
+                  <div class="post-description">Edson Yanaga é Diretor de Experiência do Desenvolvedor da Red Hat, é Java Champion e Microsoft MV</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post" style="background: url(https://cdn-images-1.medium.com/max/1500/gradv/29/81/30/darken/25/1*E29yAtKtDhPn916OdaHD0A.jpeg)">
+              <div class="flex align-bottom">
+                <div class="margin">
+                  <a href="#">
+                    <h2 class="post-title">DevParaná Conference - Edson Yanaga</h2>
+                    <span class="post-date">Fri, 25 Nov 2016 09:00:00</span>
+                    <div class="post-description">Edson Yanaga é Diretor de Experiência do Desenvolvedor da Red Hat, é Java Champion e Microsoft MV</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <ul class="posts">
             <li class="post" ng-repeat="post in vm.posts">
               <a href="{{ post.link }}" target="_blank">
                 <h2 class="post-title" ng-bind="post.title"></h2>
@@ -98,7 +133,7 @@
                 <div class="post-description" ng-bind-html="post.description | limitTo: 100"></div>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
 
@@ -106,6 +141,27 @@
         <div class="container">
           <h2 class="title">Parceiros</h2>
           <p class="subtitle">Aqui você encontra algumas das empresas que acreditam na nossa comunidade.</p>
+
+          <div class="flex wrap align-center">
+            <div class="partner">
+
+            </div>
+            <div class="partner">
+
+            </div>
+            <div class="partner">
+
+            </div>
+            <div class="partner">
+
+            </div>
+            <div class="partner">
+
+            </div>
+            <div class="partner">
+
+            </div>
+          </div>
         </div>
       </section>
     </main>
