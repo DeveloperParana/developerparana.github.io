@@ -75,3 +75,24 @@
 
     +below('m')
       margin-top 20px
+
+
+
+  .arrow
+    width 30px
+    height 30px
+    position absolute
+    bottom: 120px
+    z-index: 9
+
+    img
+      animation teste .3s infinite alternate
+
+    @keyframes teste {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(10px);
+      }
+    }
