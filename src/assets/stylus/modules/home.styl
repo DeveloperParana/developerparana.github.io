@@ -40,6 +40,7 @@
     font-size 55px
     font-weight 700
     line-height 55px
+    margin-bottom 10px
 
     +below('t')
       font-size 45px
@@ -49,17 +50,10 @@
       font-size 35px
       line-height 45px
 
-    &::after
-      content ''
-      width 100px
-      height 7px
-      background $white
-      display block
-      margin 0 auto
-
   .description
     font-size 18px
     font-weight 400
+    margin-top 10px
 
     +below('m')
       text-align center
@@ -75,6 +69,16 @@
 
     +below('m')
       margin-top 20px
+
+
+  .hr
+    content ''
+    display: block
+    width: 100px
+    height: 7px
+    background: #0F6D33
+    border none
+    margin 0 auto
 
 
 

@@ -25,16 +25,16 @@
     text-align center
     margin-bottom 80px
 
-  .event
-    span(1/4, top)
-    margin-bottom 30px
-
-    +below('t')
-      span(2/4, top)
-      text-align center
-
-    +below('m')
-      span(4/4, top)
+  // .event
+  //   span(1/4, top)
+  //   margin-bottom 30px
+  //
+  //   +below('t')
+  //     span(2/4, top)
+  //     text-align center
+  //
+  //   +below('m')
+  //     span(4/4, top)
 
   .event-date
     color $gray
@@ -68,3 +68,12 @@
     font-size 12px
     font-style italic
     font-weight 700
+
+
+.event
+  background: rgba(0, 0, 0, 0.2)
+  min-height: 100px
+  flex-basis: 250px
+  margin: 10px
+  background-size: cover!important
+  padding: 10px
