@@ -1,160 +1,202 @@
 <!DOCTYPE html>
 <html ng-app="App" lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#15a14b">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
 
-    <title>Devparaná</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#15a14b">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-  </head>
+<!--  SeoTopper // http://quinalha.me/seotopper -->
+<title>Devparaná</title>
+<meta name="description" content="Comunidade paranaense de desenvolvedores, vejas os últimos eventos para você participar em nosso estado!"/>
+<meta name="author" content="Devparaná"/>
+<link rel="base" href="http://www.devparana.org/"/>
+<link rel="canonical" href="http://www.devparana.org/"/>
+<meta rel="sitemap" type="application/xml" content="http://www.devparana.org/sitemap.xml"/>
+<meta name="robots" content="index/follow"/>
+<meta name="googlebot" content="index/follow"/>
+<meta name="theme-color" content="#15a14b"/>
+<meta name="msapplication-navbutton-color" content="#15a14b"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#15a14b"/>
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Devparaná"/>
+<meta itemprop="description" content="Comunidade paranaense de desenvolvedores, vejas os últimos eventos para você participar em nosso estado!"/>
+<meta itemprop="image" content="http://www.devparana.org/img/conf-2017.jpg"/>
+<!-- markup for facebook -->
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Devparaná"/>
+<meta property="og:url" content="http://www.devparana.org/"/>
+<meta property="og:site_name" content="Devparaná"/>
+<meta property="og:image" content="http://www.devparana.org/img/conf-2017.jpg"/>
+<meta property="og:description" content="Comunidade paranaense de desenvolvedores, vejas os últimos eventos para você participar em nosso estado!"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="fb:app_id" content=""/>
+<meta property="fb:admins" content=""/>
+<!-- markup for twitter -->
+<meta name="twitter:card" content="Summary"/>
+<meta name="twitter:title" content="Devparaná"/>
+<meta name="twitter:description" content="Comunidade paranaense de desenvolvedores, vejas os últimos eventos para você participar em nosso estado!"/>
+<meta name="twitter:creator" content="Devparaná"/>
+<meta name="twitter:image" content="http://www.devparana.org/img/conf-2017.jpg"/>
+<!-- JSON-LD - structured data markup Google Search -->
+<script type="application/ld+json">
+{"@context":"http://www.schema.org","@type":"organization","name":"Devparaná","url":"http://www.devparana.org/","image":"http://www.devparana.org/img/conf-2017.jpg","logo":"https://avatars1.githubusercontent.com/u/15199454?v=3&s=200","description":"Comunidade paranaense de desenvolvedores, vejas os últimos eventos para você participar em nosso estado!","address":{"addressRegion":"Paraná","@type":"PostalAddress","addressCountry":"Brasil","postalCode":"87050-080","addressLocality":"Maringá"}}
+</script>
+<!--  SeoTopper // http://quinalha.me/seotopper -->
 
-  <body ng-controller="AppController as vm">
-    <header class="header">
-      <div class="container">
-        <div class="logo-content">
-          <div class="logo">
-            <a href="">
-              <img class="image" src="assets/images/logo.svg">
-            </a>
-          </div>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body ng-controller="AppController as vm">
+  <header class="header">
+    <div class="container">
+      <div class="logo-content">
+        <div class="logo">
+          <a href="">
+            <img class="image" src="assets/images/logo.svg">
+          </a>
         </div>
-
-        <div class="icon-hamburguer-content">
-          <label for="hamburguer" class="icon-hamburguer">
-			      <span class="lines line-top"></span>
-			      <span class="lines line-mid"></span>
-			      <span class="lines line-bottom"></span>
-			    </label>
-				</div>
-
-				<input id="hamburguer" type="checkbox">
-
-        <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-item"><a class="menu-link" href="#home">Home</a></li>
-            <li class="menu-item"><a class="menu-link" href="#events">Eventos</a></li>
-            <li class="menu-item"><a class="menu-link" href="#about">Sobre</a></li>
-            <li class="menu-item"><a class="menu-link" href="#blog">Blog</a></li>
-            <li class="menu-item"><a class="menu-link" href="#parnets">Parceiros</a></li>
-            <li class="menu-item"><a class="menu-social fa fa-facebook" target="_blank" href="https://www.facebook.com/DeveloperParana"></a></li>
-            <li class="menu-item"><a class="menu-social fa fa-slack" target="_blank" href="https://www.slack.devparana.org/"></a></li>
-            <li class="menu-item"><a class="menu-social fa fa-meetup" target="_blank" href="https://www.meetup.com/pt-BR/developerparana/"></a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
 
-    <main class="main">
-      <section id="home" class="home">
-        <div class="flex align-center full-height text-center">
-          <div class="text">
-            <h1 class="title">Comunidade paranaense de desenvolvedores</h1>
-            <hr class="hr">
-            <p class="description">Devparaná Conference 2017, dia 22 de julho!</p>
-            <a class="more" href="http://www.devparana.org/conf/" target="_blank">Saiba mais</a>
-          </div>
-          <div class="arrow">
-            <img src="assets/images/arrow-down.svg" width="30" alt="">
-          </div>
+      <div class="icon-hamburguer-content">
+        <label for="hamburguer" class="icon-hamburguer">
+          <span class="lines line-top"></span>
+          <span class="lines line-mid"></span>
+          <span class="lines line-bottom"></span>
+        </label>
+      </div>
+
+      <input id="hamburguer" type="checkbox">
+
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a class="menu-link" href="#home">Home</a></li>
+          <li class="menu-item"><a class="menu-link" href="#events">Eventos</a></li>
+          <li class="menu-item"><a class="menu-link" href="#about">Sobre</a></li>
+          <li class="menu-item"><a class="menu-link" href="#blog">Blog</a></li>
+          <li class="menu-item"><a class="menu-link" href="#parnets">Parceiros</a></li>
+          <li class="menu-item">
+            <a class="menu-social fa fa-facebook" target="_blank" href="https://www.facebook.com/DeveloperParana"></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-social fa fa-slack" target="_blank" href="https://www.slack.devparana.org/"></a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-social fa fa-meetup" target="_blank" href="https://www.meetup.com/pt-BR/developerparana/"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="home" class="home">
+      <div class="flex align-center full-height text-center">
+        <div class="text">
+          <h1 class="title">Comunidade paranaense de desenvolvedores</h1>
+          <hr class="hr">
+          <p class="description">Devparaná Conference 2017, dia 22 de julho!</p>
+          <a class="more" href="http://www.devparana.org/conf/" target="_blank">Saiba mais</a>
         </div>
-      </section>
-
-      <section id="events" class="events">
-        <div class="container">
-          <h2 class="title">Eventos</h2>
-          <p class="subtitle">Vejas os últimos eventos para você participar em nosso estado!</p>
-
-          <div class="flex wrap align-center">
-            <div class="event" ng-repeat="event in vm.events">
-              <span class="event-date" ng-bind="event.date"></span>
-              <h3 class="event-title" ng-bind="event.title"></h3>
-              <h5 class="event-organizer" ng-bind="event.organization"></h5>
-              <a class="event-link" href="{{ event.link }}">Visite o site deste evento</a>
-            </div>
-          </div>
-
+        <div class="arrow">
+          <img src="assets/images/arrow-down.svg" width="30" alt="">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="about" class="about">
-        <div class="container">
-          <h2 class="title">Sobre</h2>
-          <p class="subtitle">Entenda o porque estamos realizando isso.</p>
+    <section id="events" class="events">
+      <div class="container">
+        <h2 class="title">Eventos</h2>
+        <p class="subtitle">Vejas os últimos eventos para você participar em nosso estado!</p>
 
-          <p class="text">A ideia deste movimento é dar o empurrão que faltava para muito dos desenvolvedores paranaenses começarem a compartilhar conhecimento, através de Meetups, Coding Dojo, Conferências e tudo mais que pudermos fazer juntos. Nossa iniciativa, visa auxiliar comunidades e movimentos nas suas ações, não competindo com os mesmos.</p>
-          <p class="text">Atualmente temos cerca de 800 desenvolvedores em nosso Slack, uma ótima ferramenta que reuni pessoas com diversos conhecimentos</p>
-        </div>
-      </section>
-
-      <section id="blog" class="blog">
-        <div class="container">
-          <h2 class="title">Nosso blog</h2>
-          <p class="subtitle">Aqui você encontra nossas últimas postagens, participe também!</p>
-
-          <div class="posts flex align-top justify-left">
-
-            <div class="post" ng-repeat="post in vm.posts">
-                <div class="margin">
-                  <a href="#">
-                    <h2 class="post-title" ng-bind="post.title"></h2>
-                    <hr class="hr-green">
-                    <span class="post-date" ng-bind="post.date"></span>
-                    <div class="post-description" ng-bind-html="post.description | limitTo: 100"></div>
-                  </a>
-                </div>
-            </div>
-
+        <div class="flex wrap align-center">
+          <div class="event" ng-repeat="event in vm.events">
+            <span class="event-date" ng-bind="event.date"></span>
+            <h3 class="event-title" ng-bind="event.title"></h3>
+            <h5 class="event-organizer" ng-bind="event.organization"></h5>
+            <a class="event-link" href="{{ event.link }}">Visite o site deste evento</a>
           </div>
         </div>
-      </section>
 
-      <section id="partners" class="partners">
-        <div class="container">
-          <h2 class="title">Parceiros</h2>
-          <p class="subtitle">Aqui você encontra algumas das empresas que acreditam na nossa comunidade.</p>
+      </div>
+    </section>
 
-          <div class="flex wrap align-center">
-            <div class="partner" ng-repeat="partner in vm.partners">
-              <a ng-href="">
-                <img ng-src="partner.logo" alt="" rel="">
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="title">Sobre</h2>
+        <p class="subtitle">Entenda o porque estamos realizando isso.</p>
+
+        <p class="text">A ideia deste movimento é dar o empurrão que faltava para muito dos desenvolvedores paranaenses começarem a compartilhar conhecimento, através de Meetups, Coding Dojo, Conferências e tudo mais que pudermos fazer juntos. Nossa iniciativa, visa
+          auxiliar comunidades e movimentos nas suas ações, não competindo com os mesmos.</p>
+        <p class="text">Atualmente temos cerca de 800 desenvolvedores em nosso Slack, uma ótima ferramenta que reuni pessoas com diversos conhecimentos</p>
+      </div>
+    </section>
+
+    <section id="blog" class="blog">
+      <div class="container">
+        <h2 class="title">Nosso blog</h2>
+        <p class="subtitle">Aqui você encontra nossas últimas postagens, participe também!</p>
+
+        <div class="posts flex align-top justify-left">
+          <div class="post" ng-repeat="post in vm.posts">
+            <div class="margin">
+              <a href="#">
+                <h2 class="post-title" ng-bind="post.title"></h2>
+                <hr class="hr-green">
+                <span class="post-date" ng-bind="post.date"></span>
+                <div class="post-description" ng-bind-html="post.description | limitTo: 100"></div>
               </a>
             </div>
-
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="footer">
+    <section id="partners" class="partners">
       <div class="container">
-        <div class="message">
-          <p>Com <i class="heart fa fa-heart"></i> de desenvolvedores para desenvolvedores.</p>
-        </div>
+        <h2 class="title">Parceiros</h2>
+        <p class="subtitle">Aqui você encontra algumas das empresas que acreditam na nossa comunidade.</p>
 
-        <div class="socials">
-          <a class="social fa fa-facebook" target="_blank" href="https://www.facebook.com/DeveloperParana/"></a>
-          <a class="social fa fa-slack" target="_blank" href="https://www.slack.devparana.org/"></a>
-          <a class="social fa fa-meetup" target="_blank" href="https://www.meetup.com/pt-BR/developerparana/"></a>
+        <div class="flex wrap align-center">
+          <div class="partner" ng-repeat="partner in vm.partners">
+            <a ng-href="">
+              <img ng-src="partner.logo" alt="" rel="">
+            </a>
+          </div>
+
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
 
-  <!-- Injetando scripts externos -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="message">
+        <p>Com <i class="heart fa fa-heart"></i> de desenvolvedores para desenvolvedores.</p>
+      </div>
 
-  <!-- Manipulação de tela -->
-  <script src="assets/scripts/script.js"></script>
+      <div class="socials">
+        <a class="social fa fa-facebook" target="_blank" href="https://www.facebook.com/DeveloperParana/"></a>
+        <a class="social fa fa-slack" target="_blank" href="https://www.slack.devparana.org/"></a>
+        <a class="social fa fa-meetup" target="_blank" href="https://www.meetup.com/pt-BR/developerparana/"></a>
+      </div>
+    </div>
+  </footer>
+</body>
 
-  <!-- Módulo angular -->
-  <script src="assets/scripts/app.modules.js"></script>
-  <script src="assets/scripts/app.controller.js"></script>
-  <script src="assets/scripts/app.service.js"></script>
+<!-- Injetando scripts externos -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
+
+<!-- Manipulação de tela -->
+<script src="assets/scripts/script.js"></script>
+
+<!-- Módulo angular -->
+<script src="assets/scripts/app.modules.js"></script>
+<script src="assets/scripts/app.controller.js"></script>
+<script src="assets/scripts/app.service.js"></script>
+
 </html>
