@@ -28,9 +28,19 @@
     margin-bottom 80px
 
   .partner
-    background: rgba(0, 0, 0, 0.2)
-    min-height: 100px
     flex-basis: 250px
     margin: 10px
     background-size: cover!important
     padding: 10px
+    text-align center
+
+    img
+      width 200px
+      filter: brightness(0%)
+      opacity .5
+      transition .3s
+
+    img:hover
+      width 200px
+      filter: brightness(100%)
+      opacity 1
