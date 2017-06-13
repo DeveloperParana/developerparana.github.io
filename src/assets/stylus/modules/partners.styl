@@ -11,9 +11,36 @@
     text-align center
     margin-bottom 10px
 
+    &::after
+      content ''
+      display: block
+      width: 100px
+      margin: 0 auto
+      height: 7px
+      background: $gray
+      opacity .3
+
   .subtitle
     color $white
     font-size 18px
     font-weight 400
     text-align center
-    padding-bottom 80px
+    margin-bottom 80px
+
+  .partner
+    flex-basis: 250px
+    margin: 10px
+    background-size: cover!important
+    padding: 10px
+    text-align center
+
+    img
+      width 200px
+      filter: brightness(0%)
+      opacity .5
+      transition .3s
+
+    img:hover
+      width 200px
+      filter: brightness(100%)
+      opacity 1

@@ -3,30 +3,38 @@
   min-height 100vh
 
   .title
-    color $green
+    color #242424
     font-size 36px
     font-weight 700
     text-transform uppercase
     text-align center
     margin-bottom 10px
 
+    &::after
+      content ''
+      display: block
+      width: 100px
+      margin: 0 auto
+      height: 7px
+      background: $green
+
   .subtitle
-    color $green
+    color #808080
     font-size 18px
     font-weight 400
     text-align center
     margin-bottom 80px
 
-  .event
-    span(1/4, top)
-    margin-bottom 30px
-
-    +below('t')
-      span(2/4, top)
-      text-align center
-
-    +below('m')
-      span(4/4, top)
+  // .event
+  //   span(1/4, top)
+  //   margin-bottom 30px
+  //
+  //   +below('t')
+  //     span(2/4, top)
+  //     text-align center
+  //
+  //   +below('m')
+  //     span(4/4, top)
 
   .event-date
     color $gray
@@ -60,3 +68,11 @@
     font-size 12px
     font-style italic
     font-weight 700
+
+
+.event
+  min-height: 100px
+  flex-basis: 250px
+  margin: 10px
+  background-size: cover!important
+  padding: 10px

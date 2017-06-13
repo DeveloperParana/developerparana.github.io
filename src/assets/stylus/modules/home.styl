@@ -25,7 +25,7 @@
     bottom 0
 
   .text
-    padding-top 180px
+    padding-top 100px
     max-width 480px
 
     +below('m')
@@ -34,12 +34,13 @@
   .title,
   .description
     color $white
-    text-align left
+    text-align center
 
   .title
     font-size 55px
     font-weight 700
     line-height 55px
+    margin-bottom 10px
 
     +below('t')
       font-size 45px
@@ -49,17 +50,10 @@
       font-size 35px
       line-height 45px
 
-    &::after
-      content ''
-      width 100%
-      height 10px
-      background $white
-      display block
-      margin 20px 0
-
   .description
     font-size 18px
     font-weight 400
+    margin-top 10px
 
     +below('m')
       text-align center
@@ -75,3 +69,34 @@
 
     +below('m')
       margin-top 20px
+
+
+  .hr
+    content ''
+    display: block
+    width: 100px
+    height: 7px
+    background: #0F6D33
+    border none
+    margin 0 auto
+
+
+
+  .arrow
+    width 30px
+    height 30px
+    position absolute
+    bottom: 120px
+    z-index: 9
+
+    img
+      animation teste .3s infinite alternate
+
+    @keyframes teste {
+      from {
+        transform: translateY(0px);
+      }
+      to {
+        transform: translateY(10px);
+      }
+    }
