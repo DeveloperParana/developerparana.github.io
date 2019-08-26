@@ -80,7 +80,11 @@ a:hover {
 .logo {
   width: 84px;
   max-width: 100%;
-  margin: 16px;
+  margin: 8px;
+}
+
+.project-name {
+  margin: 8px;
 }
 
 .flex {
